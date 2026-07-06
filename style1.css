@@ -31,13 +31,7 @@ body{
     color: #fff;
     
 }
-.wrapper h1:hover{
-    
-     box-shadow:
-        0 0 10px rgba(255,182,193,0.8),
-        0 0 20px rgba(255,182,193,0.6),
-        0 0 35px rgba(255,182,193,0.4);
-}
+
 
 .wrapper .input_box{
     width: 100%;
