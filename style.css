@@ -10,15 +10,19 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: white;
+    background-color: pink;
 
 }
 .wrapper{
     width: 420px;
-    background-color: blueviolet;
-    color: white;
+    color: black;
     padding: 30px;
-    border-radius: 20px;
+    border-radius: 30px ;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+     border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     
 
 }
@@ -26,6 +30,7 @@ body{
     font-size: 36px;
     text-align: center;
     margin-bottom:10px;
+    
 }
 .wrapper .input_box{
     position:relative;
@@ -43,10 +48,16 @@ body{
     border: 2px solid rgba(255,255,255,.2);
     border-radius:40px;
     padding: 20px 45px 20px 20px;
-    color: #fff;
+    color: black;
+}
+.input_box input:hover{
+     box-shadow:
+        0 0 10px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(0, 0, 0, 0.3),
+        0 0 35px rgba(0, 0, 0, 0.3);
 }
 .input_box input::placeholder{
-    color: #fff;
+    color: black;
 
 }
 .input_box .material-symbols-outlined.icon {
@@ -65,7 +76,7 @@ body{
 
 }
 .wrapper .remember_forgot a{
-    color: #fff;
+    color: black;
 }
 .wrapper .remember_forgot a:hover{
     text-decoration: underline;
@@ -79,13 +90,17 @@ body{
     padding: 10px;
     display: flex;
     justify-content: center;
-    color: blueviolet;
+    color: pink;
     font-size: 15px;
 
 }
 .wrapper button:hover{
     color: white;
-    background-color: brown;
+    background-color: grey;
+    box-shadow:
+        0 0 10px white,
+        0 0 20px white,
+        0 0 35px white;
 }
 .register{
     margin-top: 30px;
