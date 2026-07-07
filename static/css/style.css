@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: pink;
+    background-color: grey;
 
 }
 .wrapper{
@@ -80,7 +80,7 @@ body{
 }
 .wrapper .remember_forgot a:hover{
     text-decoration: underline;
-    color: brown;
+    color: pink;
     
 }
 
@@ -96,7 +96,7 @@ body{
 }
 .wrapper button:hover{
     color: white;
-    background-color: grey;
+    background-color: pink;
     box-shadow:
         0 0 10px white,
         0 0 20px white,
@@ -112,7 +112,7 @@ body{
 }
 .register a:hover{
     text-decoration: underline;
-    color: brown;
+    color: pink;
 }
 .invalid {
     background-color: #ffebee;
