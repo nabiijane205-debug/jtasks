@@ -15,15 +15,25 @@
 </head>
 <body>
     <div class="wrapper">
-        <form action="">
+        <form method="POST">
+            {% csrf_token %}
+
+            
+
             <h1>log in</h1>
+            {% if messages %}
+             {% for message in messages %}
+                <p class="invalid">{{ message }}</p>
+             {% endfor %}
+            {% endif %}
+            
             <div class="input_box">
-                <input type="text", placeholder="username",required>
+                <input type="email" name="username" placeholder="email" required>
                 <span class="material-symbols-outlined icon">person</span>
                 
             </div>
             <div class="input_box">
-                <input type="password", placeholder="password",required>
+                <input type="password"  name="password"  placeholder="password" required>
                 <span class="material-symbols-outlined icon">lock</span>
             
             </div>
@@ -31,12 +41,13 @@
                 <label><input type="checkbox", checked>remember me</label>
                 <a href="#">forgot password</a>
             </div>
-            <button>log in</button>
+            <button type="submit">log in</button>
             <div class="register">
-                <p>don't have an account?<a href="register.html">sign up</a></p>
+                <p>don't have an account?<a href="{% url 'register' %}">sign up</a></p>
                 
 
             </div>
+            
             
 
             
